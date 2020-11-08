@@ -1,0 +1,61 @@
+h1,h2,h3{
+    font-family: fantasy;
+    color: purple;
+    text-align: center;
+    
+}
+
+body {
+   background-color: black;
+}
+p{font-family: fantasy;
+color: rgb(255, 255, 255);
+text-align: center;
+font-size: 150%;
+background-color: black;}
+img{width: 700px}
+li{font-size: 120%;}
+h1{font-size: 450%;}
+ul.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em }
+    ul.navbar li {
+        background: white;
+        margin: 0.5em 0;
+        padding: 0.3em;
+        border-right: 1em solid black }
+      ul.navbar a {
+        text-decoration: none }
+     
+        a:link {
+          font-size: 40px;
+        color: white}
+      a:visited {
+        color: rgb(14, 6, 136)}
+        p{font-size: 150%;}
+        table {
+            color: black;
+            border: 3px solid rgb(95, 90, 90);
+            width: 13%;
+            float: left;
+        }
+        
+        td,
+        tr{
+            border: 2px solid rgba(99, 96, 96, 0.808);
+            background-color: black;
+            height: 35px;
+        }
+        th{
+            border: 2px solid rgb(107, 104, 104);
+            background-color: black;
+            height: 45px;
+            color: white;
+        }
+        
+       
