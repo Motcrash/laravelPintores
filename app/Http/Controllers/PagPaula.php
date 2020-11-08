@@ -37,5 +37,11 @@ public function rufino(){
         'titulo'=> 'Rufino Tamayo',
         ]);
 }
+    public function login(){
+    return view('admin.login');
+}
+public function validarlogin(Request $request){
+    return view('index');
+}
 
 }
