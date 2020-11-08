@@ -32,3 +32,8 @@ Route::get('/david', [
                             'uses' => 'PagPaula@rufino',
                                 'as' => 'rufino'
                                 ]);
+
+                                Route::get('/', 'PagPaula@login');  
+                                Route::post('/validar', 'PagPaula@validarlogin');
+                                    
+                                
