@@ -33,7 +33,38 @@ Route::get('/david', [
                                 'as' => 'rufino'
                                 ]);
 
+
                                 Route::get('/', 'PagPaula@login');  
                                 Route::post('/validar', 'PagPaula@validarlogin');
                                     
                                 
+                                                              
+                                Route::get('/', [
+                                    'uses' => 'Crud@index',
+                                    'as' => 'show'
+                                ]);
+                                
+                                Route::get('/insert', [
+                                    'uses' => 'Crud@create',
+                                    'as' => 'insert'
+                                ]);
+                                
+                                Route::get('/detail/{id}', [
+                                    'uses' => 'Crud@show',
+                                    'as' => 'detail'
+                                ]);
+                                
+                                Route::get('/delete/{id}', [
+                                    'uses' => 'Crud@destroy',
+                                    'as' => 'delete'
+                                ]);
+                                
+                                Route::post('/save', [
+                                    'uses' => 'Crud@store',
+                                    'as' => 'save'
+                                ]);
+                                
+                                Route::post('/update', [
+                                    'uses' => 'Crud@update',
+                                    'as' => 'update'
+                                ]);
